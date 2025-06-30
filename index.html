@@ -1,0 +1,118 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coconut Water</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-800">
+
+  <nav class="bg-green-700 text-white">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl">Fresh CocoWater</h1>
+      <button id="menuBtn" class="sm:hidden block">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden sm:flex space-x-6">
+        <li><a href="#benefits" class="hover:text-yellow-300">Benefits</a></li>
+        <li><a href="#blog" class="hover:text-yellow-300">Blog</a></li>
+        <li><a href="#faq" class="hover:text-yellow-300">FAQ</a></li>
+      </ul>
+    </div>
+    <ul id="mobileMenu" class="sm:hidden hidden bg-green-800 text-center">
+      <li class="p-2 border-b border-green-600"><a href="#benefits">Benefits</a></li>
+      <li class="p-2 border-b border-green-600"><a href="#blog">Blog</a></li>
+      <li class="p-2"><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <header class="container mx-auto p-6 flex flex-col-reverse md:flex-row items-center">
+    <div class="md:w-1/2">
+      <h2 class="text-4xl md:text-5xl text-green-700 font-bold mb-4">Coconut Water</h2>
+      <p class="text-lg mb-4">Coconut water is a refreshing, natural drink packed with essential electrolytes, vitamins, and minerals. A perfect way to satisfy your thirst and nourish your body.</p>
+      <a href="#benefits" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800 transition">Discover Benefits</a>
+    </div>
+    <div class="md:w-1/2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coconut_Drink%2C_Pangandaran.JPG/960px-Coconut_Drink%2C_Pangandaran.JPG" class="rounded-lg shadow-lg" />
+    </div>
+  </header>
+
+  <section id="benefits" class="container mx-auto p-6">
+    <h2 class="text-3xl text-center text-green-700 mb-8">Benefits of Coconut Water</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded shadow hover:scale-105 transition">
+        <h3 class="text-xl mb-2 text-green-800">Hydration Hero</h3>
+        <p>Coconut water is loaded with electrolytes like potassium and magnesium, helping you rehydrate naturally after exercise or a hot day.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow hover:scale-105 transition">
+        <h3 class="text-xl mb-2 text-green-800">Low in Calories</h3>
+        <p>Unlike sugary drinks, coconut water is low in calories and contains no fat or cholesterol, making it a healthy alternative for daily hydration.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow hover:scale-105 transition">
+        <h3 class="text-xl mb-2 text-green-800">Rich in Nutrients</h3>
+        <p>It contains vitamins C and B-complex, along with minerals like calcium and iron, boosting immunity and overall wellness.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="container mx-auto p-6">
+    <h2 class="text-3xl text-center text-green-700 mb-8">Blog</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white rounded shadow hover:shadow-lg transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Fresh_coconut_water.jpg" class="rounded-t" />
+        <div class="p-4">
+          <h3 class="text-2xl text-green-800 mb-2">5 Ways Coconut Water Boosts Your Workout</h3>
+          <p>Coconut water can replenish electrolytes, reduce cramps, and keep you energized during your toughest workouts.</p>
+          <a href="#" class="text-green-700 hover:underline mt-2 inline-block">Read More →</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1620752420341-4cd7642568dd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-t" />
+        <div class="p-4">
+          <h3 class="text-2xl text-green-800 mb-2">Coconut Water & Glowing Skin</h3>
+          <p>Not just for drinking, coconut water can be used in skincare routines to hydrate and nourish your skin.</p>
+          <a href="#" class="text-green-700 hover:underline mt-2 inline-block">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="container mx-auto p-6">
+    <h2 class="text-3xl text-center text-green-700 mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <details class="bg-white p-4 rounded shadow">
+        <summary class="cursor-pointer text-green-800 text-lg">Is coconut water good for weight loss?</summary>
+        <p class="mt-2">Yes! It’s low in calories, fat-free, and helps keep you full, making it a great choice if you’re watching your weight.</p>
+      </details>
+      <details class="bg-white p-4 rounded shadow">
+        <summary class="cursor-pointer text-green-800 text-lg">Can I drink coconut water every day?</summary>
+        <p class="mt-2">Absolutely. Unless you have specific health issues, moderate daily consumption is safe and beneficial for most people.</p>
+      </details>
+      <details class="bg-white p-4 rounded shadow">
+        <summary class="cursor-pointer text-green-800 text-lg">Does coconut water lower blood pressure?</summary>
+        <p class="mt-2">Its high potassium content can help regulate blood pressure levels naturally. However, consult a doctor for medical advice.</p>
+      </details>
+    </div>
+  </section>
+
+   <script>
+    const btn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    btn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
